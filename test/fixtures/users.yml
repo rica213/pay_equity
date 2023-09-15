@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  gender: MyString
+  job_title: MyString
+  years_of_experience: 1
+  location: MyString
+  industry: MyString
+
+two:
+  gender: MyString
+  job_title: MyString
+  years_of_experience: 1
+  location: MyString
+  industry: MyString
