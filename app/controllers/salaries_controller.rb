@@ -46,12 +46,12 @@ class SalariesController < ApplicationController
   # Allow users to search for salary data based on different criteria
   # GET /salaries/search
   def search
-    filters = params.permit(:industry, :location, :job_title)
+    filters = params.permit(:industry, :location, :job_title, :years_of_experience)
 
     query = Salary.all
 
     filters.each do |filter, value|
-      query = query.where(filter => value) if value.present?
+      query = query.joins(:user).where("users.#{filter}" => value) if value.present?
     end
 
     results = query.all

@@ -51,3 +51,5 @@ end
 
 gem 'devise-jwt'
 gem 'fast_jsonapi'
+gem "factory_bot_rails"
+gem "rspec-rails"
