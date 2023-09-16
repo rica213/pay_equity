@@ -69,6 +69,8 @@ In order to run this project you need:
 
 - **Rails** installed
 
+-  **PostgreSQL**
+
 Run this command to install **Rails**
 
 ```sh
