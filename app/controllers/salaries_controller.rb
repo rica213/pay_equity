@@ -20,7 +20,7 @@ class SalariesController < ApplicationController
     end
   end
 
-  # Allow a user to update their salary and benefits data for a specific
+  # Allow a user to update their salary and benefits data for a specific salary
   # PATCH/PUT /salaries/:id
   def update
     @salary = current_user.salaries.find(params[:id])
