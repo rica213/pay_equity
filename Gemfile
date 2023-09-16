@@ -34,7 +34,7 @@ gem "bootsnap", require: false
 # gem "image_processing", "~> 1.2"
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
-# gem "rack-cors"
+gem "rack-cors"
 
 # Use Devise for authentication, learn more here [https://github.com/heartcombo/devise]
 gem "devise"
@@ -49,3 +49,5 @@ group :development do
   # gem "spring"
 end
 
+gem 'devise-jwt'
+gem 'fast_jsonapi'
