@@ -24,7 +24,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_15_183842) do
 
   create_table "users", force: :cascade do |t|
     t.string "gender", null: false
-    t.string "pronoun", null: false
+    t.string "pronoun"
     t.string "job_title", null: false
     t.integer "years_of_experience", null: false
     t.string "location", null: false
