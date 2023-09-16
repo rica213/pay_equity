@@ -15,8 +15,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_15_183842) do
   enable_extension "plpgsql"
 
   create_table "salaries", force: :cascade do |t|
-    t.integer "salary"
-    t.integer "benefits"
+    t.integer "salary", null: false
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -24,11 +23,12 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_15_183842) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "gender"
-    t.string "job_title"
-    t.integer "years_of_experience"
-    t.string "location"
-    t.string "industry"
+    t.string "gender", null: false
+    t.string "pronoun", null: false
+    t.string "job_title", null: false
+    t.integer "years_of_experience", null: false
+    t.string "location", null: false
+    t.string "industry", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "email", default: "", null: false
