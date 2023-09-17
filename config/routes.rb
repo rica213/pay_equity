@@ -8,4 +8,6 @@ Rails.application.routes.draw do
 
   get "salaries/search", to: "salaries#search"
   get "salaries/compare", to: "salaries#compare"
+
+  resources :users, only: [:update]
 end
